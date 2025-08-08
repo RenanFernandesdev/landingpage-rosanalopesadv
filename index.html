@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rosana Lopes - Advocacia & Consultoria Jurídica</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <a href="index.html" class="logo-header">
+          <img
+            src="images/main_logo.png"
+            alt="logo"
+            class="logo-img"
+            id="mainLogo"
+          />
+        </a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#servicos">Atuação</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero-section">
+        <div class="container" style="display: flex">
+          <div class="hero-content animate-on-scroll fade-in-up">
+            <h1>Atuação Jurídica Cível e Tributária</h1>
+            <p>
+              Excelência em soluções estratégicas que asseguram agilidade e
+              eficiência.
+            </p>
+            <a
+              href="https://wa.me/5511945665632"
+              target="_blank"
+              class="btn-primary"
+              >Fale com uma Especialista</a
+            >
+          </div>
+        </div>
+        <div
+          class="container hero-image animate-on-scroll fade-in"
+          id="heroImage"
+        >
+          <img
+            src="images/rosana.png"
+            alt="Imagem de destaque"
+            class="rosana-img"
+          />
+        </div>
+        <script>
+          function toggleHeroImage() {
+            const heroImage = document.getElementById("heroImage");
+            if (window.innerWidth < 800) {
+              heroImage.style.display = "none";
+            } else {
+              heroImage.style.display = "";
+            }
+          }
+          window.addEventListener("resize", toggleHeroImage);
+          window.addEventListener("DOMContentLoaded", toggleHeroImage);
+        </script>
+      </section>
+
+      <section id="servicos" class="services-section">
+        <div class="container">
+          <h2 class="animate-on-scroll fade-in">Áreas de atuação</h2>
+          <div class="services-grid">
+            <div class="service-card animate-on-scroll fade-in-up">
+              <ion-icon name="people-outline"></ion-icon>
+              <h3>Cívil</h3>
+              <ul style="text-align: start; padding: 15px">
+                <li>Divórcio</li>
+                <li>Inventário</li>
+                <li>Partilha de bens</li>
+                <li>Direito do consumidor</li>
+                <li>Contratos</li>
+                <li>Responsabilidade civil</li>
+                <li>entre outros...</li>
+              </ul>
+            </div>
+            <div
+              class="service-card animate-on-scroll fade-in-up"
+              style="animation-delay: 0.2s"
+            >
+              <ion-icon name="calculator-outline"></ion-icon>
+              <h3>Tributário</h3>
+              <ul style="text-align: start; padding: 15px">
+                <li>Execução fiscal</li>
+                <li>Contencioso tributário</li>
+                <li>Análise de conformidade tributária</li>
+                <li>Regularização para empresas</li>
+                <li>entre outros...</li>
+              </ul>
+            </div>
+            <div
+              class="service-card animate-on-scroll fade-in-up"
+              style="animation-delay: 0.2s"
+            >
+              <ion-icon name="briefcase-outline"></ion-icon>
+              <h3>Trabalhista</h3>
+              <ul style="text-align: start; padding: 15px">
+                <li>Reconhecimento de Vínculo Empregatício</li>
+                <li>Rescisão indireta</li>
+                <li>Cobrança de Verbas Rescisórias</li>
+                <li>Reversão de justa causa</li>
+                <li>entre outros...</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--
+      <section id="sobre" class="about-section">
+        <div class="container animate-on-scroll fade-in">
+          <h2>Sobre Nossa Empresa</h2>
+          <p>
+            Fundada em 2010, a Sua Empresa Inc. tem a missão de transformar
+            desafios em oportunidades através de soluções tecnológicas de ponta.
+            Nossa paixão é criar valor e impacto positivo para nossos clientes,
+            combinando expertise técnica com uma abordagem centrada no ser
+            humano.
+          </p>
+        </div>
+      </section>
+
+      <section id="equipe" class="team-section">
+        <div class="container">
+          <h2 class="animate-on-scroll fade-in">
+            Nossa Equipe de Especialistas
+          </h2>
+          <div class="team-grid">
+            <div class="team-member animate-on-scroll fade-in">
+              <img
+                src="https://via.placeholder.com/250"
+                alt="Foto de Ana Silva"
+              />
+              <h3>Ana Silva</h3>
+              <p>CEO & Fundadora</p>
+            </div>
+            <div
+              class="team-member animate-on-scroll fade-in"
+              style="animation-delay: 0.2s"
+            >
+              <img
+                src="https://via.placeholder.com/250"
+                alt="Foto de Bruno Costa"
+              />
+              <h3>Bruno Costa</h3>
+              <p>Diretor de Tecnologia (CTO)</p>
+            </div>
+            <div
+              class="team-member animate-on-scroll fade-in"
+              style="animation-delay: 0.4s"
+            >
+              <img
+                src="https://via.placeholder.com/250"
+                alt="Foto de Carla Martins"
+              />
+              <h3>Carla Martins</h3>
+              <p>Líder de Projetos</p>
+            </div>
+          </div>
+        </div>
+      </section>
+-->
+      <section id="contato" class="contact-section">
+        <div class="container animate-on-scroll fade-in-up">
+          <h2>Contato</h2>
+          <br />
+          <a
+            href="https://wa.me/5511945665632"
+            target="_blank"
+            style="font-size: 20px"
+          >
+            <ion-icon
+              name="logo-whatsapp"
+              style="vertical-align: middle; font-size: 2em; color: #a07f53"
+            ></ion-icon>
+            (11) 9 4566 5632
+          </a>
+          <br />
+          <br />
+          <a
+            href="https://www.instagram.com/rosana.lopesadv?igsh=ejNsbGR2eTczZWE0"
+            target="_blank"
+            style="font-size: 20px"
+          >
+          <ion-icon name="logo-instagram" 
+                    style="vertical-align: middle; font-size: 2em; color: #a07f53"
+                    ></ion-icon>
+            
+            @rosana.lopesadv
+          </a>
+          <br />
+          <br />
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <p>
+          &copy; 2025. Todos os Direitos Reservados. Rosana Fernandes Lopes
+          Advocacia & Consultoria Jurídica.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

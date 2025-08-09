@@ -116,7 +116,8 @@ a {
 
 /* ---- SEÇÃO HERO ---- */
 .hero-section {
-  background: url("../images/main_logo.png") no-repeat center center/cover;
+  background: url("../images/main_logo.png") no-repeat center center;
+  background-size: 90%;
   background-color: var(--primary-color);
   color: var(--light-color);
   height: 90vh;
@@ -175,7 +176,7 @@ a {
 
 .btn-primary {
   display: inline-block;
-  background-color: transparent;
+  background-color: var(--golden-color);
   color: var(--light-color);
   padding: 12px 30px;
   border-radius: 5px;
@@ -185,9 +186,9 @@ a {
 }
 
 .btn-primary:hover {
-  background: var(--golden-color);
-  color: var(--light-color);
-  border: 2px solid var(--light-color);
+  background: var(--light-color);
+  color: var(--golden-color);
+  border: 2px solid var(--golden-color);
 }
 
 .btn-secondary {
